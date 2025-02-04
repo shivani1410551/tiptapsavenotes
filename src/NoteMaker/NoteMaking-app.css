@@ -1,0 +1,66 @@
+
+
+/* general css */
+
+.tiptap-wrapper{
+margin-inline:auto;
+padding:2rem;
+max-width:800px
+}
+
+.tiptap-heading{
+  font-size:3rem;
+  font-weight:bold;
+  margin-bottom:12px;
+  text-align:center
+}
+.sidebar{
+border:1px solid black;
+padding:12px;
+border-radius:1rem;
+margin-bottom:24px;
+}
+.editor-content{
+  border:1px solid black;
+  padding:16px
+}
+
+.save-button{
+margin-top:12px;
+background-color:deepSkyBlue;
+color:#fff;
+border-radius:12px;
+border:none;
+outline:none;
+padding-inline:24px;
+padding-block:6px
+}
+.notes-list{
+margin-block:12px
+}
+.note-list{
+  border:1px solid black;
+padding:12px;
+border-radius:12px;
+display:flex;
+justify-content:space-between;
+}
+
+.note-btn{
+color:grey;
+padding:6px 12px;
+margin-right:12px;
+border-radius:12px
+}
+.edit-btn{
+  background-color:yellow;
+}
+.delete-btn{
+  background-color:red;
+
+}
+
+.container{
+  background-color:papayawhip;
+  height:100vh
+}

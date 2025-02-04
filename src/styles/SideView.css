@@ -1,0 +1,85 @@
+/* SideView.css */
+
+.sidePanel {
+  width: 300px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#searchBox {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.notesList {
+  margin-top: 10px;
+}
+
+.ShowedList,
+.activeNavLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.ShowedList:hover {
+  background-color: #f1f1f1;
+}
+
+.activeNavLink {
+  background-color: #007bff;
+  color: white;
+}
+
+.List_Title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Active_List_Title {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.metaData,
+.Active_metaData {
+  font-size: 12px;
+  color: #666;
+}
+
+.Active_metaData {
+  color: white;
+}
+
+.sidePanel_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #d9534f;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.sidePanel_btn:hover {
+  color: #c9302c;
+}

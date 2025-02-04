@@ -1,0 +1,71 @@
+.homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: pink;
+  color: #333;
+  padding: 20px;
+  width:60vw;
+
+}
+
+.cursor {
+  position: relative;
+  display: inline-block;
+}
+
+.Homeheading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #4a90e2; /* Soft blue accent */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.desc {
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.5;
+  color: #555; /* Slightly darker text for better contrast */
+  animation: slideUp 0.8s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .Homeheading {
+    font-size: 2rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,122 @@
+.Editor_Parent {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tools .btns {
+  background: none;
+  border: none;
+  padding: 8px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.tools .btns:hover {
+  background-color: #f0f0f0;
+}
+
+.tools .is-active {
+  background-color: #ddd;
+}
+
+.Save_btn {
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.Save_btn:hover {
+  background-color: #45a049;
+}
+
+.tools input[type="color"] {
+  margin-left: 10px;
+}
+
+.Float {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 100;
+}
+
+.Float button {
+  margin: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.Float button:hover {
+  background-color: #f0f0f0;
+}
+
+.Float button.is-active {
+  background-color: #ddd;
+}
+
+.editorContent {
+  flex-grow: 1;
+  padding: 15px;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.editorContent h1,
+.editorContent h2,
+.editorContent h3,
+.editorContent h4,
+.editorContent h5,
+.editorContent h6 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.editorContent p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.editorContent ul,
+.editorContent ol {
+  margin-left: 20px;
+}
+
+.editorContent li {
+  margin-bottom: 5px;
+}
+
+.editorContent blockquote {
+  background-color: #f9f9f9;
+  border-left: 5px solid #ccc;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+.editorContent a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.editorContent a:hover {
+  text-decoration: underline;
+}

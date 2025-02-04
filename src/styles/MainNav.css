@@ -1,0 +1,84 @@
+/* Parent container for the navigation */
+.Nav_Parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.Nav_Heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4a90e2;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Container for the navigation buttons */
+.All_Nav_btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+/* Styling for each navigation button */
+.Nav_btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Button hover effect */
+.Nav_btn:hover {
+  background-color: #357ab7;
+  transform: scale(1.05);
+}
+
+/* Button icon styling */
+.Nav_btn i {
+  font-size: 1.2rem;
+}
+
+/* Special styles for the 'Cancel' button */
+.Nav_btn:focus,
+.Nav_btn:active {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .Nav_Parent {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .Nav_Heading {
+    font-size: 1.5rem;
+  }
+
+  .All_Nav_btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Nav_btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
